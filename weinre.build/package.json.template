@@ -1,5 +1,5 @@
 {
-  "name":              "weinre",
+  "name":              "pgb-weinre",
   "description":       "WEb INspector REmote",
   "author":            "apache.org",
   "version":           "@WEINRE_VERSION@",

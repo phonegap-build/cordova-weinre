@@ -55,9 +55,9 @@ module.exports = class RemotePanel extends WebInspector.Panel
         @clientList = new ClientList()
         div.appendChild @targetList.getElement()
         div.appendChild @clientList.getElement()
-        @serverProperties = DT.DIV($className: "weinreServerProperties")
-        div.appendChild DT.H1("Server Properties")
-        div.appendChild @serverProperties
+        #@serverProperties = DT.DIV($className: "weinreServerProperties")
+        #div.appendChild DT.H1("Server Properties")
+        #div.appendChild @serverProperties
         @element.appendChild div
         @reset()
 
@@ -161,7 +161,7 @@ module.exports = class RemotePanel extends WebInspector.Panel
             table += "<tr class='weinre-normal-text-size'><td valign='top'>#{key.escapeHTML()}: <td>" + val
 
         table += "</table>"
-        @serverProperties.innerHTML = table
+        #@serverProperties.innerHTML = table
 
 #-------------------------------------------------------------------------------
 class TargetList extends ConnectorList
